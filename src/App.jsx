@@ -7,7 +7,8 @@ export default function App() {
     useEffect(() => {
         callApi();
     console.log( 'message from local' );
-    console.log('message from remote');
+    console.log( 'message from remote' );
+    console.log( 'message from local2' );
     }, [])
     const callApi = () => {
         axios.get(" https://api.thecatapi.com/v1/images/search").then(
